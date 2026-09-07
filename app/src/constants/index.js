@@ -21,8 +21,6 @@ import {
   projWomanGuardian,
   projStrideIa,
   projMlDiabetes,
-  projListaPresenca,
-  projControleClientes,
 } from "./assets";
 
 export const navLinks = [
@@ -111,6 +109,30 @@ export const exploring = {
   text: "Comecei agora a mexer com impressão 3D — modelar, calibrar, errar a primeira camada e tentar de novo. É a mesma curiosidade que me trouxe para a programação: gosto de entender como a tecnologia funciona por dentro e aprender fazendo.",
 };
 
+export const socials = [
+  {
+    label: "LinkedIn",
+    handle: "in/juan-quezada",
+    href: "https://www.linkedin.com/in/juan-quezada/",
+    icon: "linkedin",
+  },
+  {
+    label: "GitHub",
+    handle: "@juanmqc22",
+    href: "https://github.com/juanmqc22",
+    icon: "github",
+  },
+  {
+    label: "E-mail",
+    handle: "juanmqc22@gmail.com",
+    href: "mailto:juanmqc22@gmail.com",
+    icon: "mail",
+  },
+  // TODO Juan: me passa o @ do Instagram e eu ligo aqui.
+  // { label: "Instagram", handle: "@seu_usuario",
+  //   href: "https://instagram.com/seu_usuario", icon: "instagram" },
+];
+
 export const projects = [
   {
     name: "WomanGuardian",
@@ -148,29 +170,5 @@ export const projects = [
     ],
     image: projMlDiabetes,
     source_code_link: "https://github.com/juanmqc22/ml-diabetes-detection",
-  },
-  {
-    name: "Lista de Presença",
-    description:
-      "Sistema que simplifica o acompanhamento diário de presença e atividades da equipe. Em poucos cliques o responsável registra o progresso de cada pessoa e dispara automaticamente um e-mail ao gerente.",
-    tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
-    ],
-    image: projListaPresenca,
-    source_code_link: "https://juanmqc22.github.io/Ctm_page/suplente/suplente.html",
-  },
-  {
-    name: "Controle de clientes",
-    description:
-      "Sistema de controle de clientes em Java com Spring e Maven. Cadastro, organização e consulta de informações em banco de dados, com API REST para integrar com outros sistemas.",
-    tags: [
-      { name: "Java", color: "blue-text-gradient" },
-      { name: "restApi", color: "green-text-gradient" },
-      { name: "Spring", color: "pink-text-gradient" },
-    ],
-    image: projControleClientes,
-    source_code_link: "https://github.com/juanmqc22/Springboot",
   },
 ];

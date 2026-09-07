@@ -7,16 +7,13 @@ export const logo = asset("logo.svg");
 export const menu = asset("menu.svg");
 export const close = asset("close.svg");
 export const github = asset("github.png");
+export const juan = asset("juan.jpg");
 
 // ícones da seção "sobre mim"
 export const teste = asset("teste.png");
-export const selfLearner = asset("self_learner.png");
-export const languajes = asset("languajes.png");
 export const agile = asset("agile.png");
 export const contentCreator = asset("content_creator.png");
 export const backEnd = asset("back_end.png");
-export const problemSolver = asset("problem_solver.png");
-export const teamWork = asset("team_work.png");
 export const impressao3d = asset("impressao3d.png");
 
 // ícones de tecnologias
@@ -45,16 +42,10 @@ export const typescript = asset("typescript.png");
 
 // logos usados na linha do tempo
 export const ijsud = asset("logo-ijsud.png");
-export const ctm = asset("logo-ctm.png");
-export const uebmundo = asset("logo-uebmundo.png");
 export const posgrad = asset("logo-posgrad.png");
 export const freelance = asset("logo-freelance.png");
-export const games = asset("logo-games.png");
 
 // imagens de projeto
 export const projWomanGuardian = asset("proj-womanguardian.png");
 export const projStrideIa = asset("proj-stride-ia.png");
 export const projMlDiabetes = asset("proj-ml-diabetes.png");
-export const projListaPresenca = asset("proj-lista-presenca.png");
-export const projControleClientes = asset("proj-controle-clientes.png");
-export const projWdd130 = asset("proj-wdd130.png");

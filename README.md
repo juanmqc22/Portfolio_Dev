@@ -18,12 +18,13 @@ app/                  ← o código-fonte fica aqui
   index.html          entrada do Vite (template, não é o build)
   src/
     components/       Navbar, Hero, About, Experience, Tech, Works, Exploring, Contact
-      canvas/         cenas three.js (Computers, Earth, Ball, Stars)
+      canvas/         cenas three.js (Earth, Ball, Stars)
+      SocialIcons.jsx glifos das redes usados no contato
     constants/
       index.js        ← todo o conteúdo do site (bio, experiências, projetos)
       assets.js       mapeamento dos arquivos em /assets
     hoc/              SectionWrapper (animação de entrada das seções)
-    hooks/            useMediaQuery
+    hooks/            useMediaQuery, useReveal, useHashScroll
     utils/motion.js   variantes do framer-motion
     styles.js         classes de tipografia compartilhadas
 ```
@@ -71,10 +72,14 @@ O site é acessado principalmente pelo celular, então duas regras valem sempre:
   próprio. Acima de 1024px elas são 3D; abaixo disso viram uma grade estática
   de ícones (`Tech.jsx`), deixando o celular com apenas 3 canvas: computador,
   planeta e estrelas.
-- **Animação de entrada com `amount: "some"`.** O `SectionWrapper` dispara a
-  animação assim que qualquer parte da seção aparece. Com um percentual fixo,
-  seções mais altas que a tela do celular nunca atingiam o limite e ficavam
-  invisíveis para sempre — foi um bug real.
+- **O conteúdo nunca depende da animação.** O `SectionWrapper` usa o
+  `useReveal`, que mostra na hora qualquer seção já visível *ou que ficou para
+  trás* — o caso de abrir a página direto num `#ancora`. Com o `whileInView`
+  do framer-motion, seções que nunca chegavam a intersectar ficavam invisíveis
+  para sempre. Se mexer aqui, teste abrindo `/#projects` direto.
+- **Âncora em SPA precisa de ajuda.** O React monta a página depois do HTML,
+  então o navegador não acha o alvo do `#` no carregamento. O `useHashScroll`
+  refaz o pulo depois da montagem.
 
 Ao mexer no layout, teste em 390px de largura antes de publicar.
 
