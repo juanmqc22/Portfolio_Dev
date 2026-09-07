@@ -12,25 +12,25 @@ const Exploring = () => (
       <h2 className={styles.sectionHeadText}>Explorando agora.</h2>
     </motion.div>
 
+    {/* Faixa fina em vez de card: com um item só, um card grande deixaria a
+        seção com cara de inacabada. */}
     <motion.div
-      variants={fadeIn("up", "spring", 0.2, 0.75)}
-      className="mt-8 sm:mt-12 green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      variants={fadeIn("up", "spring", 0.2, 0.6)}
+      className="mt-8 flex items-start sm:items-center gap-4 sm:gap-6 bg-tertiary rounded-2xl border-l-4 border-secondary py-5 px-5 sm:px-7"
     >
-      <div className="bg-tertiary rounded-[20px] p-6 sm:p-10 flex flex-col sm:flex-row items-center sm:items-start gap-6">
-        <img
-          src={exploring.icon}
-          alt=""
-          className="w-20 h-20 sm:w-24 sm:h-24 object-contain shrink-0"
-        />
+      <img
+        src={exploring.icon}
+        alt=""
+        className="w-11 h-11 sm:w-14 sm:h-14 object-contain shrink-0"
+      />
 
-        <div className="text-center sm:text-left">
-          <h3 className="text-white font-bold text-[20px] sm:text-[24px]">
-            {exploring.title}
-          </h3>
-          <p className="mt-3 text-secondary text-[14px] sm:text-[16px] leading-relaxed max-w-2xl">
-            {exploring.text}
-          </p>
-        </div>
+      <div className="min-w-0">
+        <h3 className="text-white font-bold text-[16px] sm:text-[19px]">
+          {exploring.title}
+        </h3>
+        <p className="mt-1 text-secondary text-[13px] sm:text-[15px] leading-relaxed">
+          {exploring.text}
+        </p>
       </div>
     </motion.div>
   </>

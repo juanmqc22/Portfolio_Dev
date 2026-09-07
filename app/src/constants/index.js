@@ -98,7 +98,7 @@ export const experiences = [
 export const exploring = {
   title: "Impressão 3D",
   icon: impressao3d,
-  text: "Comecei agora a mexer com impressão 3D — modelar, calibrar, errar a primeira camada e tentar de novo. É a mesma curiosidade que me trouxe para a programação: gosto de entender como a tecnologia funciona por dentro e aprender fazendo.",
+  text: "Modelar, calibrar, errar a primeira camada e tentar de novo. A mesma curiosidade que me trouxe para a programação: gosto de entender a tecnologia por dentro e aprender fazendo.",
 };
 
 export const socials = [
