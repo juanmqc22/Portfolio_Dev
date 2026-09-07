@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { juan } from "../constants/assets";
+import { curriculo, juan } from "../constants/assets";
 
 const Hero = () => (
   <section className="relative w-full min-h-screen mx-auto flex items-center">
@@ -34,6 +34,14 @@ const Hero = () => (
               className="border border-secondary text-secondary font-bold text-[14px] sm:text-[15px] rounded-xl px-6 py-3 hover:bg-secondary hover:text-primary transition-colors"
             >
               Falar comigo
+            </a>
+            <a
+              href={curriculo}
+              target="_blank"
+              rel="noreferrer"
+              className="border border-white/25 text-white font-bold text-[14px] sm:text-[15px] rounded-xl px-6 py-3 hover:border-secondary hover:text-secondary transition-colors"
+            >
+              Currículo
             </a>
           </div>
         </div>

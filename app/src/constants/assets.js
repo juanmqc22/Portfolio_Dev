@@ -8,6 +8,7 @@ export const menu = asset("menu.svg");
 export const close = asset("close.svg");
 export const github = asset("github.png");
 export const juan = asset("juan.jpg");
+export const curriculo = asset("Juan-Quezada-CV.pdf");
 
 // ícones da seção "sobre mim"
 export const teste = asset("teste.png");
@@ -46,6 +47,8 @@ export const posgrad = asset("logo-posgrad.png");
 export const freelance = asset("logo-freelance.png");
 
 // imagens de projeto
+export const projContratos = asset("proj-contratos.png");
+export const projRunner = asset("proj-runner.png");
+export const projConectaIcs = asset("proj-conecta-ics.png");
 export const projWomanGuardian = asset("proj-womanguardian.png");
-export const projStrideIa = asset("proj-stride-ia.png");
 export const projMlDiabetes = asset("proj-ml-diabetes.png");

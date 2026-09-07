@@ -14,8 +14,10 @@ import {
   ijsud,
   freelance,
   posgrad,
+  projContratos,
+  projRunner,
+  projConectaIcs,
   projWomanGuardian,
-  projStrideIa,
   projMlDiabetes,
 } from "./assets";
 
@@ -45,7 +47,6 @@ export const technologies = [
 
 export const experiences = [
   {
-    // TODO Juan: trocar por entregas concretas (que clientes, que sistemas, que resultado).
     title: "Web Developer",
     company_name: "Freelance",
     icon: freelance,
@@ -69,16 +70,17 @@ export const experiences = [
     ],
   },
   {
-    // TODO Juan: trocar por entregas concretas (quais apps, quantos usuarios, que processo foi automatizado).
+    // TODO Juan: o CV chama este cargo de "AI & Automation Specialist". Definir qual usar.
     title: "Desenvolvedor de sistemas",
     company_name: "A Igreja de Jesus Cristo dos Santos dos Últimos Dias",
     icon: ijsud,
     iconBg: "#143157",
     date: "Ago 2025 - o momento",
     points: [
-      "Aplicações internas na Power Platform com PowerApps, tirando processos manuais do caminho das equipes.",
+      "Construí o Runner, CRM interno que hoje gerencia mais de 6.000 solicitações de serviço, com automação de fluxo, rastreamento e visibilidade operacional.",
+      "Entreguei a gestão dos contratos fixos de manutenção, limpeza e jardinagem de mais de 2.000 imóveis da organização.",
+      "Levei IA para dentro dos processos: extração de dados de faturas de pagamento, cortando trabalho manual e ganhando precisão.",
       "Painéis em Power BI que transformam dados operacionais em indicadores de decisão.",
-      "Automação de rotinas e integrações entre sistemas, do levantamento da necessidade à entrega.",
     ],
   },
   {
@@ -127,6 +129,42 @@ export const socials = [
 
 export const projects = [
   {
+    name: "Gestão de Contratos Fixos",
+    context: "Projeto interno · 2026",
+    description:
+      "Solução para gestão dos contratos fixos de manutenção, limpeza e jardinagem em mais de 2.000 imóveis da organização. Melhorou o controle contratual, o acompanhamento de fornecedores, o agendamento de serviços e a conformidade.",
+    tags: [
+      { name: "PowerApps", color: "blue-text-gradient" },
+      { name: "PowerBI", color: "green-text-gradient" },
+      { name: "SQL", color: "pink-text-gradient" },
+    ],
+    image: projContratos,
+  },
+  {
+    name: "Runner",
+    context: "Projeto interno · 2025",
+    description:
+      "CRM interno que gerencia mais de 6.000 solicitações de serviço, com automação de fluxo, rastreamento e visibilidade operacional. Implementei também extração de dados de faturas por IA, cortando trabalho manual e ganhando precisão.",
+    tags: [
+      { name: "PowerPlatform", color: "blue-text-gradient" },
+      { name: "IA", color: "green-text-gradient" },
+      { name: "CRM", color: "pink-text-gradient" },
+    ],
+    image: projRunner,
+  },
+  {
+    name: "Conecta ICS",
+    context: "Projeto interno · 2024",
+    description:
+      "Aplicação interna que automatiza a abertura de chamados de TI, em Power Apps e Power Automate. Integrei IA para sugerir soluções aos problemas relatados, melhorando o tempo de resposta e a eficiência do suporte.",
+    tags: [
+      { name: "PowerApps", color: "blue-text-gradient" },
+      { name: "PowerAutomate", color: "green-text-gradient" },
+      { name: "IA", color: "pink-text-gradient" },
+    ],
+    image: projConectaIcs,
+  },
+  {
     name: "WomanGuardian",
     description:
       "Plataforma de monitoramento preventivo em saúde da mulher que analisa áudio, vídeo e texto de consultas para detectar sinais precoces de risco. Junta YOLOv8, uma rede neural de emoção na voz e Azure Speech em um motor de risco explicável.",
@@ -137,19 +175,6 @@ export const projects = [
     ],
     image: projWomanGuardian,
     source_code_link: "https://github.com/juanmqc22/WomanGuardian_TechChallenge4",
-  },
-  {
-    name: "Arquitetura + IA (STRIDE)",
-    description:
-      "Ferramenta que analisa a arquitetura de um sistema com apoio de IA e aplica o modelo STRIDE para levantar ameaças de segurança, traduzindo risco técnico em algo acionável por quem escreve o código.",
-    tags: [
-      { name: "Python", color: "blue-text-gradient" },
-      { name: "LLM", color: "green-text-gradient" },
-      { name: "STRIDE", color: "pink-text-gradient" },
-    ],
-    image: projStrideIa,
-    source_code_link:
-      "https://github.com/juanmqc22/posfiap_7iadt_techchallenge_fase5",
   },
   {
     name: "ML Diabetes Detection",
