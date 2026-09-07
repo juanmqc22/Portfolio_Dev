@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -9,6 +8,11 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const backToTop = () => {
+    setActive("");
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 100);
@@ -24,12 +28,13 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
+        <div
+          role="link"
+          tabIndex={0}
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={backToTop}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") backToTop();
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
@@ -37,7 +42,7 @@ const Navbar = () => {
             Juan Quezada &nbsp;
             <span className="sm:block hidden"> | Developer </span>
           </p>
-        </Link>
+        </div>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (

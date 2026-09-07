@@ -1,6 +1,7 @@
-// Os arquivos de imagem ficam em /assets na raiz do repositório e são
-// servidos estaticamente, sem passar pelo bundler.
-const asset = (name) => `/assets/${name}`;
+// Os arquivos de imagem ficam em assets/ na raiz do repositório e são
+// servidos estaticamente, sem passar pelo bundler. O caminho é relativo
+// ao documento para o site funcionar também em um subcaminho.
+const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`;
 
 export const logo = asset("logo.svg");
 export const menu = asset("menu.svg");

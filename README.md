@@ -45,6 +45,12 @@ npm run build
 O Vite escreve `index.html` e `build/` na raiz do repositório. Commite esses
 arquivos junto com a mudança no `src/` — é o build que vai para o ar.
 
+Os caminhos gerados são relativos (`base: "./"` no `vite.config.js`), então o
+mesmo build funciona tanto na raiz de um domínio quanto publicado em um
+subcaminho, como o GitHub Pages de projeto (`/Portfolio_Dev/`). Ao referenciar
+um arquivo estático no código, use `import.meta.env.BASE_URL` como prefixo em
+vez de começar o caminho com `/`.
+
 ## Editando o conteúdo
 
 Quase tudo que você vai querer mudar está em `app/src/constants/index.js`:

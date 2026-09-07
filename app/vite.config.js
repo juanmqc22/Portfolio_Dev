@@ -5,6 +5,9 @@ import react from "@vitejs/plugin-react";
 // Por isso o build sai de app/ direto para a raiz, sem apagar assets/,
 // desktop_pc/ e planet/, que são estáticos e versionados.
 export default defineConfig({
+  // Base relativa: o site funciona tanto na raiz de um dominio quanto
+  // publicado em um subcaminho, como o GitHub Pages de projeto (/Portfolio_Dev/).
+  base: "./",
   plugins: [react()],
   publicDir: false,
   build: {
