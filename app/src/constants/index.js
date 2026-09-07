@@ -1,5 +1,4 @@
 import {
-  teste,
   agile,
   contentCreator,
   backEnd,
@@ -9,12 +8,9 @@ import {
   docker,
   git,
   java,
-  javascript,
   mysql,
   python,
-  reactjs,
   scikitlearn,
-  typescript,
   ijsud,
   freelance,
   posgrad,
@@ -34,7 +30,6 @@ export const services = [
   { title: "Backend & APIs", icon: backEnd },
   { title: "IA & Machine Learning", icon: contentCreator },
   { title: "Automação & Power Platform", icon: agile },
-  { title: "Desenvolvimento Web", icon: teste },
 ];
 
 export const technologies = [
@@ -45,9 +40,6 @@ export const technologies = [
   { name: "scikit-learn", icon: scikitlearn },
   { name: "Azure", icon: azure },
   { name: "Docker", icon: docker },
-  { name: "JavaScript", icon: javascript },
-  { name: "TypeScript", icon: typescript },
-  { name: "React", icon: reactjs },
   { name: "git", icon: git },
 ];
 
