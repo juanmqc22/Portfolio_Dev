@@ -1,12 +1,9 @@
 import {
   teste,
-  selfLearner,
-  languajes,
   agile,
   contentCreator,
   backEnd,
-  problemSolver,
-  teamWork,
+  impressao3d,
   azure,
   csharp,
   docker,
@@ -19,34 +16,27 @@ import {
   scikitlearn,
   typescript,
   ijsud,
-  ctm,
-  uebmundo,
-  posgrad,
   freelance,
-  games,
+  posgrad,
   projWomanGuardian,
   projStrideIa,
   projMlDiabetes,
   projListaPresenca,
   projControleClientes,
-  projWdd130,
 } from "./assets";
 
 export const navLinks = [
   { id: "about", title: "Sobre mim" },
-  { id: "work", title: "Trabalhos" },
+  { id: "work", title: "Experiência" },
+  { id: "projects", title: "Projetos" },
   { id: "contact", title: "Contato" },
 ];
 
 export const services = [
-  { title: "Backend Developer", icon: backEnd },
+  { title: "Backend & APIs", icon: backEnd },
   { title: "IA & Machine Learning", icon: contentCreator },
-  { title: "Automação de Processos", icon: agile },
+  { title: "Automação & Power Platform", icon: agile },
   { title: "Desenvolvimento Web", icon: teste },
-  { title: "Problem-Solver", icon: problemSolver },
-  { title: "Self-Learner", icon: selfLearner },
-  { title: "Team Lider", icon: teamWork },
-  { title: "Multilíngue Esp - Por - Ing", icon: languajes },
 ];
 
 export const technologies = [
@@ -65,68 +55,15 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "Serviço Voluntario",
-    company_name: "A Igreja de Jesus Cristo dos Santos dos Últimos Dias",
-    icon: ijsud,
-    iconBg: "#143157",
-    date: "Fev 2019 - Fev 2021",
-    points: [
-      "Dediquei tempo a treinar e preparar mais de 50 missionários para serem bem-sucedidos em suas comunicações com as pessoas e alcançarem suas metas.",
-      "Coordenei atividades missionárias, incluindo ensinamentos e apresentações para auxiliar as pessoas em sua jornada espiritual.",
-      "Motivei e inspirei um grupo com mais de 30 missionários, fornecendo orientação e incentivo para ajudá-los a alcançar seus objetivos.",
-      "Elaborei planejamentos diários, semanais e mensais, garantindo que as atividades missionárias estivessem bem organizadas e eficientemente planejadas.",
-    ],
-  },
-  {
-    title: "Instrutor Trilingue",
-    company_name: "Centro de Treinamento Missionário",
-    icon: ctm,
-    iconBg: "#ffffff",
-    date: "Jun 2021 - Mai 2023",
-    points: [
-      "Atuei como instrutor trilíngue, capacitando grupos de pessoas a aprenderem um novo idioma por meio de metas e métodos de ensino altamente efetivos.",
-      "Ensinava habilidades de comunicação interpessoal, ajudando-os a falar com as pessoas, tratá-las com empatia e persuadi-las a ouvir suas mensagens.",
-      "Desenvolvi e implementei treinamentos para que os grupos trabalhassem de forma colaborativa, fortalecendo o trabalho em equipe e a obtenção de resultados coletivos.",
-      "Inspirei paixão e dedicação em relação ao idioma e ao ensino, encorajando-os a encontrar satisfação e entusiasmo no que estavam aprendendo.",
-    ],
-  },
-  {
-    title: "Auxiliar de TI",
-    company_name: "UEBMUNDO",
-    icon: uebmundo,
-    iconBg: "#040c0f",
-    date: "Mai 2023 - Jun 2023",
-    points: [
-      "Desenvolvimento do site: Liderei a criação, atualização e aprimoramento do site da empresa, garantindo que ele atendesse aos mais altos padrões de qualidade.",
-      "Implementação do walletpass digital: Enfrentei o desafio de implementar um walletpass digital, buscando e implementando soluções que atendessem aos requisitos necessários.",
-      "Acompanhamento de desenvolvimento externo: Garanti que a empresa contratada para o desenvolvimento do site cumprisse com as entregas e prazos estabelecidos.",
-      "Paixão pela tecnologia e inovação: Demonstrei entusiasmo e dedicação em impulsionar o crescimento da empresa por meio de soluções eficientes e inovadoras.",
-    ],
-  },
-  {
-    // TODO Juan: trocar por 3-4 entregas concretas (que clientes, que sistemas, que resultado).
+    // TODO Juan: trocar por entregas concretas (que clientes, que sistemas, que resultado).
     title: "Web Developer",
     company_name: "Freelance",
     icon: freelance,
     iconBg: "#0a1b22",
     date: "Mai 2023 - Ago 2025",
     points: [
-      "Desenvolvi sites e aplicações web sob demanda para clientes, atuando de forma remota do levantamento de requisitos até a entrega.",
-      "Trabalhei com HTML5, CSS e JavaScript, cuidando de layout responsivo e da experiência em telas de diferentes tamanhos.",
-      "Conduzi os projetos de ponta a ponta: prazo, comunicação com o cliente, ajustes e publicação.",
-    ],
-  },
-  {
-    // TODO Juan: completar com a descricao que esta no LinkedIn.
-    title: "Tradutor & Testador de games",
-    company_name: "Red Cerberus",
-    icon: games,
-    iconBg: "#0a1b22",
-    date: "Mar 2024 - Ago 2024",
-    points: [
-      "Responsável pela localização de jogos do inglês para o espanhol, garantindo consistência de terminologia e naturalidade no texto final.",
-      "Executei processos de teste sobre as versões localizadas, reportando bugs de texto, layout e contexto dentro do jogo.",
-      "Trabalhei em equipe com prazos de produção, conciliando qualidade linguística e ritmo de entrega.",
+      "Sites e aplicações web sob demanda, do levantamento de requisitos à entrega, atuando remoto.",
+      "HTML5, CSS e JavaScript com foco em layout responsivo e prazo combinado com o cliente.",
     ],
   },
   {
@@ -137,9 +74,8 @@ export const experiences = [
     iconBg: "#143157",
     date: "Set 2024 - Ago 2025",
     points: [
-      "Prestei suporte técnico a usuários e equipes, diagnosticando e resolvendo incidentes de hardware, software e rede.",
-      "Atendi chamados de serviços técnicos com foco em restabelecer a operação rápido e documentar a solução.",
-      "Aproximei o suporte do desenvolvimento, identificando problemas recorrentes que valiam virar automação.",
+      "Suporte a usuários e equipes: diagnóstico e resolução de incidentes de hardware, software e rede.",
+      "Identifiquei os problemas que mais se repetiam — e foram eles que viraram as primeiras automações.",
     ],
   },
   {
@@ -150,10 +86,9 @@ export const experiences = [
     iconBg: "#143157",
     date: "Ago 2025 - o momento",
     points: [
-      "Desenvolvo aplicações internas na Power Platform com Microsoft PowerApps, transformando processos manuais em fluxos digitais.",
-      "Construo painéis em Microsoft Power BI, transformando dados operacionais em indicadores que apoiam a tomada de decisão.",
-      "Automatizo rotinas e integrações entre sistemas, reduzindo trabalho repetitivo das equipes.",
-      "Atuo em formato híbrido em São Paulo, acompanhando as áreas de negócio do levantamento da necessidade até a entrega.",
+      "Aplicações internas na Power Platform com PowerApps, tirando processos manuais do caminho das equipes.",
+      "Painéis em Power BI que transformam dados operacionais em indicadores de decisão.",
+      "Automação de rotinas e integrações entre sistemas, do levantamento da necessidade à entrega.",
     ],
   },
   {
@@ -163,38 +98,24 @@ export const experiences = [
     iconBg: "#0a1b22",
     date: "2025 - 2026 · concluída",
     points: [
-      "Construí soluções de IA aplicada ao longo dos Tech Challenges do curso, do pré-processamento de dados até a entrega de aplicações funcionais.",
-      "Desenvolvi o WomanGuardian, uma plataforma de análise multimodal (áudio, vídeo e texto) com YOLOv8, redes neurais e Azure Cognitive Services.",
-      "Treinei e avaliei modelos de classificação para predição clínica com scikit-learn e Pandas, cuidando de pré-processamento, métricas e validação.",
-      "No Hackathon da fase final, analisei arquiteturas de software com apoio de LLMs, aplicando o modelo STRIDE para levantar riscos de segurança.",
+      "WomanGuardian: análise multimodal de áudio, vídeo e texto com YOLOv8, redes neurais e Azure.",
+      "Modelos de classificação para predição clínica com scikit-learn e Pandas.",
+      "Hackathon final: análise de arquitetura com apoio de LLMs, aplicando o modelo STRIDE.",
     ],
   },
 ];
 
-export const testimonials = [
-  {
-    testimonial:
-      "Sua expertise em tecnologia é impressionante e foi essencial para o sucesso de nossos projetos. Ele conseguiu encontrar soluções inovadoras e eficazes.",
-    name: "Crys",
-    designation: "Auxiliar administrativo",
-    company: "UEBMUNDO",
-    image: "",
-  },
-  {
-    testimonial:
-      "Aprendi com Juan que é possível conciliar profissionalismo, humildade e gratidão. Ele sempre eleva a equipe e serve de excelente exemplo!",
-    name: "Ataadson Paes",
-    designation: "Supervisor de treinamento",
-    company: "Centro de Treinamento Missionário",
-    image: "",
-  },
-];
+export const exploring = {
+  title: "Impressão 3D",
+  icon: impressao3d,
+  text: "Comecei agora a mexer com impressão 3D — modelar, calibrar, errar a primeira camada e tentar de novo. É a mesma curiosidade que me trouxe para a programação: gosto de entender como a tecnologia funciona por dentro e aprender fazendo.",
+};
 
 export const projects = [
   {
     name: "WomanGuardian",
     description:
-      "Plataforma de monitoramento preventivo em saúde da mulher que processa áudio, vídeo e texto de consultas para detectar sinais precoces de risco clínico. Combina YOLOv8 para leitura de comportamento em vídeo, uma rede neural treinada em RAVDESS para emoção na voz e Azure Speech + Language para transcrição e análise de sentimento, fundindo tudo em um motor de risco explicável.",
+      "Plataforma de monitoramento preventivo em saúde da mulher que analisa áudio, vídeo e texto de consultas para detectar sinais precoces de risco. Junta YOLOv8, uma rede neural de emoção na voz e Azure Speech em um motor de risco explicável.",
     tags: [
       { name: "Python", color: "blue-text-gradient" },
       { name: "YOLOv8", color: "green-text-gradient" },
@@ -206,7 +127,7 @@ export const projects = [
   {
     name: "Arquitetura + IA (STRIDE)",
     description:
-      "Hackathon de conclusão da pós: uma ferramenta que analisa a arquitetura de um sistema com apoio de IA e aplica o modelo STRIDE para levantar ameaças de segurança. A saída traduz riscos técnicos em insights acionáveis, aproximando modelagem de ameaças de quem escreve o código.",
+      "Ferramenta que analisa a arquitetura de um sistema com apoio de IA e aplica o modelo STRIDE para levantar ameaças de segurança, traduzindo risco técnico em algo acionável por quem escreve o código.",
     tags: [
       { name: "Python", color: "blue-text-gradient" },
       { name: "LLM", color: "green-text-gradient" },
@@ -219,7 +140,7 @@ export const projects = [
   {
     name: "ML Diabetes Detection",
     description:
-      "Projeto de machine learning voltado à predição de diabetes, cobrindo o ciclo completo: limpeza e pré-processamento dos dados, engenharia de atributos, treino e comparação de modelos, avaliação por métricas e discussão dos conceitos necessários para levar o modelo à produção.",
+      "Projeto de machine learning para predição de diabetes cobrindo o ciclo completo: limpeza dos dados, engenharia de atributos, treino, comparação de modelos e avaliação por métricas.",
     tags: [
       { name: "scikit-learn", color: "blue-text-gradient" },
       { name: "Pandas", color: "green-text-gradient" },
@@ -231,7 +152,7 @@ export const projects = [
   {
     name: "Lista de Presença",
     description:
-      "Sistema que simplifica o acompanhamento diário de presença e atividades dos colaboradores. Com poucos cliques a pessoa responsável registra o progresso de cada membro da equipe e dispara automaticamente um e-mail ao gerente, ganhando agilidade e comunicação nas operações.",
+      "Sistema que simplifica o acompanhamento diário de presença e atividades da equipe. Em poucos cliques o responsável registra o progresso de cada pessoa e dispara automaticamente um e-mail ao gerente.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
@@ -243,7 +164,7 @@ export const projects = [
   {
     name: "Controle de clientes",
     description:
-      "Sistema de Controle de Clientes em Java com Spring e Maven, feito como projeto pessoal. Permite cadastrar, organizar e consultar informações de clientes em banco de dados, facilitando a gestão e a análise dos dados de forma segura e eficiente.",
+      "Sistema de controle de clientes em Java com Spring e Maven. Cadastro, organização e consulta de informações em banco de dados, com API REST para integrar com outros sistemas.",
     tags: [
       { name: "Java", color: "blue-text-gradient" },
       { name: "restApi", color: "green-text-gradient" },
@@ -251,17 +172,5 @@ export const projects = [
     ],
     image: projControleClientes,
     source_code_link: "https://github.com/juanmqc22/Springboot",
-  },
-  {
-    name: "BYU Project",
-    description:
-      "Projetos práticos desenvolvidos ao longo do semestre na BYU Idaho, com foco em HTML, CSS e JavaScript. Explorei funções assíncronas para criar páginas mais rápidas e interativas, consolidando a base de desenvolvimento web.",
-    tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "CSS", color: "pink-text-gradient" },
-    ],
-    image: projWdd130,
-    source_code_link: "https://juanmqc22.github.io/wdd130/",
   },
 ];

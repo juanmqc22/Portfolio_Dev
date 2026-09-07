@@ -17,6 +17,7 @@ export const contentCreator = asset("content_creator.png");
 export const backEnd = asset("back_end.png");
 export const problemSolver = asset("problem_solver.png");
 export const teamWork = asset("team_work.png");
+export const impressao3d = asset("impressao3d.png");
 
 // ícones de tecnologias
 export const azure = asset("azure.png");

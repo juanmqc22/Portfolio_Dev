@@ -2,7 +2,7 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  Exploring,
   Hero,
   Navbar,
   Tech,
@@ -20,7 +20,7 @@ const App = () => (
     <Experience />
     <Tech />
     <Works />
-    <Feedbacks />
+    <Exploring />
     <div className="relative z-0">
       <Contact />
       <StarsCanvas />

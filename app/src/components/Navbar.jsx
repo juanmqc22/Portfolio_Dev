@@ -15,9 +15,13 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 100);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+      // Fecha o menu do celular ao rolar, para ele não ficar cobrindo o conteúdo.
+      setToggle(false);
+    };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

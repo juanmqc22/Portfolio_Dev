@@ -17,12 +17,13 @@ planet/               modelo 3D da seção Contato
 app/                  ← o código-fonte fica aqui
   index.html          entrada do Vite (template, não é o build)
   src/
-    components/       Navbar, Hero, About, Tech, Experience, Works, Feedbacks, Contact
+    components/       Navbar, Hero, About, Experience, Tech, Works, Exploring, Contact
       canvas/         cenas three.js (Computers, Earth, Ball, Stars)
     constants/
       index.js        ← todo o conteúdo do site (bio, experiências, projetos)
       assets.js       mapeamento dos arquivos em /assets
     hoc/              SectionWrapper (animação de entrada das seções)
+    hooks/            useMediaQuery
     utils/motion.js   variantes do framer-motion
     styles.js         classes de tipografia compartilhadas
 ```
@@ -61,6 +62,21 @@ exporte em `app/src/constants/assets.js` e importe no `index.js`.
 
 Os ícones das tecnologias viram textura de uma esfera 3D, então precisam ser
 **PNG com fundo transparente** (SVG não funciona como textura).
+
+## Cuidados com o celular
+
+O site é acessado principalmente pelo celular, então duas regras valem sempre:
+
+- **Cenas 3D só onde cabem.** Cada esfera de tecnologia é um contexto WebGL
+  próprio. Acima de 1024px elas são 3D; abaixo disso viram uma grade estática
+  de ícones (`Tech.jsx`), deixando o celular com apenas 3 canvas: computador,
+  planeta e estrelas.
+- **Animação de entrada com `amount: "some"`.** O `SectionWrapper` dispara a
+  animação assim que qualquer parte da seção aparece. Com um percentual fixo,
+  seções mais altas que a tela do celular nunca atingiam o limite e ficavam
+  invisíveis para sempre — foi um bug real.
+
+Ao mexer no layout, teste em 390px de largura antes de publicar.
 
 ## Formulário de contato
 

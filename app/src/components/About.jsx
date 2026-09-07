@@ -7,17 +7,16 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt options={{ max: 25, scale: 1, speed: 450 }} className="w-full">
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.25, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
-        <img src={icon} alt={title} className="w-28 h-28 object-contain" />
-        <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+      <div className="bg-tertiary rounded-[20px] py-6 px-3 sm:px-6 h-full min-h-[160px] sm:min-h-[210px] flex justify-center items-center flex-col gap-3 sm:gap-4">
+        <img src={icon} alt="" className="w-14 h-14 sm:w-20 sm:h-20 object-contain" />
+        <h3 className="text-white text-[14px] sm:text-[18px] font-bold text-center leading-tight">
+          {title}
+        </h3>
       </div>
     </motion.div>
   </Tilt>
@@ -32,23 +31,17 @@ const About = () => (
 
     <motion.p
       variants={fadeIn("", "", 0.1, 1)}
-      className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      className="mt-4 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[26px] sm:leading-[30px]"
     >
-      Sou desenvolvedor de sistemas com foco em Inteligência Artificial,
-      automação e integração de processos. Hoje construo aplicações internas
-      na Power Platform — PowerApps, Power BI e integrações — que tiram o
-      trabalho manual do caminho das equipes. Antes disso passei por suporte
-      de TI e por dois anos de projetos web como freelance, o que me deixou
-      confortável tanto perto da infraestrutura quanto do usuário final.
-      Sou formado em Análise e Desenvolvimento de Sistemas pela FIAP (2023) e
-      concluí a pós-tech em IA para Devs na mesma instituição (2026), onde
-      levei projetos do dado bruto ao modelo em produção: visão
-      computacional, análise de sentimento e modelos de classificação.
-      Trabalho com Python, Java e C#, gosto de metas claras e de soluções que
-      aguentam o mundo real. Vamos construir algo juntos?
+      Sou desenvolvedor de sistemas com foco em IA, automação e integração de
+      processos. Hoje construo aplicações internas na Power Platform que tiram
+      o trabalho manual do caminho das equipes. Sou formado em Análise e
+      Desenvolvimento de Sistemas pela FIAP (2023) e concluí a pós-tech em IA
+      para Devs na mesma instituição (2026), onde levei projetos do dado bruto
+      ao modelo em produção.
     </motion.p>
 
-    <div className="mt-20 flex flex-wrap gap-10">
+    <div className="mt-10 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service} />
       ))}

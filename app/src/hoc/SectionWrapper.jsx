@@ -10,7 +10,10 @@ const SectionWrapper = (Component, idName) =>
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
+        // "some" dispara assim que qualquer parte da seção aparece. Com um
+        // percentual fixo, seções mais altas que a tela do celular nunca
+        // atingiam o limite e ficavam invisíveis para sempre.
+        viewport={{ once: true, amount: "some" }}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
         <span className="hash-span" id={idName}>
