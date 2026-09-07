@@ -46,6 +46,8 @@ export const ijsud = asset("logo-ijsud.png");
 export const ctm = asset("logo-ctm.png");
 export const uebmundo = asset("logo-uebmundo.png");
 export const posgrad = asset("logo-posgrad.png");
+export const freelance = asset("logo-freelance.png");
+export const games = asset("logo-games.png");
 
 // imagens de projeto
 export const projWomanGuardian = asset("proj-womanguardian.png");

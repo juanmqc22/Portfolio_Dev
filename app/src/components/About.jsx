@@ -34,14 +34,18 @@ const About = () => (
       variants={fadeIn("", "", 0.1, 1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
     >
-      Sou desenvolvedor backend com foco em Inteligência Artificial,
-      automação e integração de sistemas. Trabalho com Python, Java e C#
-      construindo APIs, pipelines de dados e fluxos que tiram processos
-      manuais do caminho — e venho aprofundando esse trabalho em IA aplicada,
-      Azure e Power Platform. Já levei projetos do dado bruto ao modelo em
-      produção: visão computacional, análise de sentimento e modelos de
-      classificação. Gosto de trabalhar com metas claras, arquitetura limpa e
-      soluções que aguentam o mundo real. Vamos construir algo juntos?
+      Sou desenvolvedor de sistemas com foco em Inteligência Artificial,
+      automação e integração de processos. Hoje construo aplicações internas
+      na Power Platform — PowerApps, Power BI e integrações — que tiram o
+      trabalho manual do caminho das equipes. Antes disso passei por suporte
+      de TI e por dois anos de projetos web como freelance, o que me deixou
+      confortável tanto perto da infraestrutura quanto do usuário final.
+      Sou formado em Análise e Desenvolvimento de Sistemas pela FIAP (2023) e
+      concluí a pós-tech em IA para Devs na mesma instituição (2026), onde
+      levei projetos do dado bruto ao modelo em produção: visão
+      computacional, análise de sentimento e modelos de classificação.
+      Trabalho com Python, Java e C#, gosto de metas claras e de soluções que
+      aguentam o mundo real. Vamos construir algo juntos?
     </motion.p>
 
     <div className="mt-20 flex flex-wrap gap-10">

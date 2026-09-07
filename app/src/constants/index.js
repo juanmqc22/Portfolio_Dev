@@ -22,6 +22,8 @@ import {
   ctm,
   uebmundo,
   posgrad,
+  freelance,
+  games,
   projWomanGuardian,
   projStrideIa,
   projMlDiabetes,
@@ -64,7 +66,7 @@ export const technologies = [
 export const experiences = [
   {
     title: "Serviço Voluntario",
-    company_name: "IJSUD",
+    company_name: "A Igreja de Jesus Cristo dos Santos dos Últimos Dias",
     icon: ijsud,
     iconBg: "#143157",
     date: "Fev 2019 - Fev 2021",
@@ -102,12 +104,64 @@ export const experiences = [
     ],
   },
   {
-    // TODO Juan: confirmar o período e o nome exato do curso.
+    // TODO Juan: trocar por 3-4 entregas concretas (que clientes, que sistemas, que resultado).
+    title: "Web Developer",
+    company_name: "Freelance",
+    icon: freelance,
+    iconBg: "#0a1b22",
+    date: "Mai 2023 - Ago 2025",
+    points: [
+      "Desenvolvi sites e aplicações web sob demanda para clientes, atuando de forma remota do levantamento de requisitos até a entrega.",
+      "Trabalhei com HTML5, CSS e JavaScript, cuidando de layout responsivo e da experiência em telas de diferentes tamanhos.",
+      "Conduzi os projetos de ponta a ponta: prazo, comunicação com o cliente, ajustes e publicação.",
+    ],
+  },
+  {
+    // TODO Juan: completar com a descricao que esta no LinkedIn.
+    title: "Tradutor & Testador de games",
+    company_name: "Red Cerberus",
+    icon: games,
+    iconBg: "#0a1b22",
+    date: "Mar 2024 - Ago 2024",
+    points: [
+      "Responsável pela localização de jogos do inglês para o espanhol, garantindo consistência de terminologia e naturalidade no texto final.",
+      "Executei processos de teste sobre as versões localizadas, reportando bugs de texto, layout e contexto dentro do jogo.",
+      "Trabalhei em equipe com prazos de produção, conciliando qualidade linguística e ritmo de entrega.",
+    ],
+  },
+  {
+    // TODO Juan: trocar por entregas concretas do periodo de suporte.
+    title: "Técnico de suporte em TI",
+    company_name: "A Igreja de Jesus Cristo dos Santos dos Últimos Dias",
+    icon: ijsud,
+    iconBg: "#143157",
+    date: "Set 2024 - Ago 2025",
+    points: [
+      "Prestei suporte técnico a usuários e equipes, diagnosticando e resolvendo incidentes de hardware, software e rede.",
+      "Atendi chamados de serviços técnicos com foco em restabelecer a operação rápido e documentar a solução.",
+      "Aproximei o suporte do desenvolvimento, identificando problemas recorrentes que valiam virar automação.",
+    ],
+  },
+  {
+    // TODO Juan: trocar por entregas concretas (quais apps, quantos usuarios, que processo foi automatizado).
+    title: "Desenvolvedor de sistemas",
+    company_name: "A Igreja de Jesus Cristo dos Santos dos Últimos Dias",
+    icon: ijsud,
+    iconBg: "#143157",
+    date: "Ago 2025 - o momento",
+    points: [
+      "Desenvolvo aplicações internas na Power Platform com Microsoft PowerApps, transformando processos manuais em fluxos digitais.",
+      "Construo painéis em Microsoft Power BI, transformando dados operacionais em indicadores que apoiam a tomada de decisão.",
+      "Automatizo rotinas e integrações entre sistemas, reduzindo trabalho repetitivo das equipes.",
+      "Atuo em formato híbrido em São Paulo, acompanhando as áreas de negócio do levantamento da necessidade até a entrega.",
+    ],
+  },
+  {
     title: "Pós-Tech em IA para Devs",
     company_name: "FIAP",
     icon: posgrad,
     iconBg: "#0a1b22",
-    date: "Nov 2025 - Jul 2026",
+    date: "2025 - 2026 · concluída",
     points: [
       "Construí soluções de IA aplicada ao longo dos Tech Challenges do curso, do pré-processamento de dados até a entrega de aplicações funcionais.",
       "Desenvolvi o WomanGuardian, uma plataforma de análise multimodal (áudio, vídeo e texto) com YOLOv8, redes neurais e Azure Cognitive Services.",
